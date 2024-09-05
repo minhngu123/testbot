@@ -32,7 +32,7 @@ let postWebhook = (req, res) => {
             console.log(webhook_event);
 
             let sender_psid = webhook_event.sender.id;
-            consolde.log('Sender PSID: ' + sender_psid);
+            console.log('Sender PSID: ' + sender_psid);
         })
         // Returns a '200 OK' response to all requests
         res.status(200).send("EVENT_RECEIVED");
